@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.n1k1ch.prototypes.unit_testing.openWeatherMap.TestOpenWeatherMapWithEasyMock
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 sec
