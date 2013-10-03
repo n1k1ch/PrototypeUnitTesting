@@ -1,9 +1,6 @@
 package com.n1k1ch.prototypes.unit_testing.mockited;
 
-import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
-
-import java.util.Locale;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,7 +16,7 @@ public class TestMockited {
 	public Mockited mockited;
 	
 	@Test
-	public void Verify_NoInteractions() {
+	public void Verify_ZeroInteractions() {
 		verifyZeroInteractions(mockited);
 	}
 
@@ -29,7 +26,7 @@ public class TestMockited {
 	}
 	
 	@Test
-	public void Verify_OneInteraction() {
+	public void Verify_One_Interaction() {
 		mockited.toVerify();
 		
 		verify(mockited, times(1)).toVerify();
@@ -51,15 +48,4 @@ public class TestMockited {
 		
 		verifyNoMoreInteractions(mockited);
 	}
-	
-
-	@Test
-	public void Stub() {
-		final int value = 10;
-		
-		when(mockited.toStub()).thenReturn(value);
-		
-		assertEquals(String.format(Locale.getDefault(), "mockited.hashCode() doesn't equals %d", value), mockited.toStub(), Integer.valueOf(value));
-	}
-
 }
