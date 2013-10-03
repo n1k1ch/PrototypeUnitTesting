@@ -16,6 +16,7 @@ public class OpenWeatherMapService {
 			try(Scanner scanner = new Scanner(response,"UTF-8")) {
 				result = scanner.useDelimiter("\\A").next();
 			} catch (Exception e) {
+				System.out.println(e.getCause().getMessage());
 			}
 			
 		} catch (MalformedURLException e) {

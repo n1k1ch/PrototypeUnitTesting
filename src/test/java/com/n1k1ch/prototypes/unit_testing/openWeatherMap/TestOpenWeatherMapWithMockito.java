@@ -1,9 +1,7 @@
 package com.n1k1ch.prototypes.unit_testing.openWeatherMap;
 
-import static org.mockito.Mockito.when;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-
+import static org.mockito.Mockito.when;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

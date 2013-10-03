@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: unit_testing.TestIntegerCalculator
+Test set: com.n1k1ch.prototypes.unit_testing.mockited.TestMockited
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 sec
